@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demon Slayer:Kimetsu No Yaaba</title>
+  <link rel="icon"
+    href="https://cdn.shopify.com/s/files/1/0250/0077/1659/products/demonslayer_769872d4-a9a5-4897-ac06-de7fe27c9a33_480x.png?v=1611079977">
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  @media only screen and (max-width:700px){
+    #define h1{
+      display: none;
+    }
+
+    #define p{
+      display: none;
+    }
+
+    #button button{
+      cursor: pointer;
+      width: 70px;
+      height: 20px ;
+      font-size: 10px;
+      background-color: rgb(41, 41, 42);
+      transition: ease-in rgb(32, 31, 31)
+    }
+    
+    .new-arc{
+      color: white;
+      position: absolute;
+      right: 50px;
+      bottom: 30px;
+    }
+
+  }
+
+  @media screen and (min-width:700px) {
+    
+  #define h1 {
+    font-size: 40px;
+  }
+
+  #define p{
+    font-size: 18px;
+  }
+
+  #button button {
+    cursor: pointer;
+    height: 40px;
+    width: 170px;
+    font-size: 13px;
+    background-color: rgb(15, 15, 15);
+    transition: ease-in-out;
+  }
+  
+  .new-arc{
+    color: white;
+    position: absolute;
+    right: 100px;
+    bottom: 30px;
+  }
+
+
+  }
+
+  @media  only screen and (min-width:700px) and (max-width:800px){
+    #define h1{
+      font-size: 20px ;
+    }
+    #define p{
+      font-size: 10px;
+    }
+    #button button{
+      cursor: pointer;
+      width: 70px;
+      height: 20px ;
+      font-size: 10px;
+      background-color: rgb(41, 41, 42);
+      transition: ease-irgb(32, 31, 31);
+      margin-top: 2px;
+    }
+  }
+
+  @media only screen and (max-width:1154px){
+    
+  .margin-needed{
+    margin: 0px 30px;
+  }
+
+  .right-margin{
+    margin-right: 30px;
+  }
+
+  .left-margin{
+    margin-left: 30px;
+  }
+
+  }
+
+  @media only screen and (max-width:805px){
+    
+    .margin-needed{
+      margin: 0px 10px;
+    }
+  
+    .right-margin{
+      margin-right: 10px;
+    }
+  
+    .left-margin{
+      margin-left: 10px;
+    }
+    }
+  
+  @media screen and (max-width:691px){
+    .write{
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width:691px){
+    .write{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+  }
+
+  @media screen and (min-width:1154px) {
+
+  .margin-needed{
+    margin: 0px 80px;
+  }
+
+  .right-margin{
+    margin-right: 80px;
+  }
+
+  .left-margin{
+    margin-left: 80px;
+  }
+  }
+
+  @media (max-width:530px){
+    #poster p{
+      font-size: 8px !important;
+    }
+
+    #features h1{
+      font-size: 20px !important;
+    }
+
+    .upper1 img{
+      width: 180px !important;
+    }
+
+    .images img{
+      width: 180px !important;
+    }
+
+    #up h2{
+      display: none !important;
+    }
+  }
+
+  @media (max-width:921px){
+    #poster p{
+      font-size:20px;
+      bottom: 5px;
+      left: 30px;
+    }
+  }
+
+  @media (min-width:921px){
+    #poster p{
+      font-size:30px;
+      bottom: 70px;
+      left: 70px;
+    }
+  }
+
+  header {
+    margin: 40px 70px 0px 70px;
+  }
+
+  #logo {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  #define {
+    color: black;
+    text-shadow: 0 0 100px rgb(8, 8, 8);
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 40px 70px 0px 70px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .bg-img img{
+    width: 100%;
+  }
+
+  #button button:hover {
+    opacity: 0.5;
+  }
+  
+  #grid {
+    margin: 0px 70px 70px 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .frst-img{
+    width: 62%;
+  }
+
+  .frst-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .scnd-img-col{
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .scnd-img-col img{
+    width: 100%;
+  }
+
+  #animation {
+    background-color: rgb(242, 242, 236);
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #up h2 {
+    position: absolute;
+    font-size: 45px;
+    padding-left: 70px;
+    transition: 2s;
+    top: -160px;
+    transition-timing-function: ease-out;
+  }
+
+  #animation:hover #up h2 {
+    top: 80px;
+  }
+
+  #animation:hover #read {
+    transition-timing-function: ease-in-out;
+    transition: 2s;
+    margin-top: 265px;
+  }
+
+  #read {
+    margin: 70px;
+  }
+
+  .images {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    transition-delay: 5s;
+    margin-top: 200px;
+  }
+
+  .images img{
+    transition-timing-function: ease-out;
+    transition: 2s;
+    margin-top: 40px;
+  }
+
+  .upper1 img{
+    position: absolute;
+    right: 150px;
+    transition: 2s;
+    top: -160px;
+    transition-timing-function: ease-out;
+  }
+
+  #animation:hover .upper1 img{
+    top: 20px;
+  }
+
+  #animation:hover #doma {
+    position: absolute;
+    right: 150px;
+    top: 96px;
+    transition-timing-function: ease-in-out;
+    /* transform: translate(820px, -150px); */
+  }
+
+  #animation:hover #akaza {
+    position: absolute;
+    right: 150px;
+    top: 220px;
+    transition-timing-function: ease-in-out;
+    /* transform: translate(525px, -18px); */
+  }
+
+  #animation:hover #gyokko {
+    position: absolute;
+    right: 150px;
+    top: 345px;
+    transition-timing-function: ease-in-out;
+    /* transform: translate(231px, 113px); */
+  }
+
+  #animation:hover #daki {
+    position: absolute;
+    right: 150px;
+    bottom: 20px;
+    transition-timing-function: ease-in-out;
+    /* transform: translate(-60px, 248px); */
+  }
+
+  .write {
+    color: rgb(104, 104, 104);
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+
+  #animation:hover .write {
+    transition: ease-in-out;
+    transition: 2s;
+    transform: translateY(900px);
+  }
+
+  #poster {
+    position: relative;
+    color: white;
+  }
+
+  #poster img {
+    width: 100%;
+  }
+
+  #readBtn {
+    cursor: pointer;
+    height: 40px;
+    width: 170px;
+    font-size: 13px;
+    background-color: white;
+    border: white;
+    transition: ease-in-out;
+    position: absolute;
+  }
+
+  #readBtn:hover {
+    background-color: black;
+  }
+
+  #poster p {
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-shadow: 0 0 50px black;
+    position: absolute;
+    overflow-wrap: break-word;
+    overflow: hidden;
+  }
+
+  #features {
+    margin-bottom: 200px;
+    margin-top: 20px;
+  }
+  
+  #features h1{
+    text-align: center;
+    font-size: 50px; 
+    font-family: 'Courier New', Courier;
+  }
+
+  .on {
+    margin: 50px 90px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  #touch {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times;
+    margin: 50px 60px;
+  }
+
+  #touch button {
+    cursor: pointer;
+    height: 40px;
+    width: 170px;
+    font-size: 13px;
+    background-color: rgb(221, 223, 223);
+    border: white;
+    color: rgb(121, 121, 121);
+    transition: ease-in-out;
+  }
+
+  #touch p{
+    margin: 16px 0;
+    font-size: 18px;
+    color: rgb(104, 104, 104);
+  }
+
+  #touch button:hover {
+    background-color: black;
+  }
+
+  #home {
+    background-color: rgb(243, 245, 245);
+    color: rgb(121, 121, 121);
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 80px 0px;
+  }
+
+  .lists ul{
+    list-style: none; 
+    font-size: 15px; 
+    color: rgb(160, 159, 159); 
+    display: flex; 
+    flex-direction: column; 
+    line-height: 1.5em;
+  }
+
+  .para{
+    font-size: 15px; 
+    color: rgb(160, 159, 159); 
+    line-height: 1.5em;
+  }
+
+  #home .lists{
+    margin: 60px;
+  }
+
+  a:link {
+    color: rgb(160, 159, 159);
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: rgb(160, 159, 159);
+  }
+</style>
+
+<body>
+  <header>
+    <div id="logo">
+      <div> <img
+          src="https://cdn.shopify.com/s/files/1/0250/0077/1659/products/demonslayer_769872d4-a9a5-4897-ac06-de7fe27c9a33_480x.png?v=1611079977"
+          alt="error" width="80px">
+      </div>
+      <div id="menu">
+        <img src="https://toppng.com/uploads/preview/menu-icon-png-3-lines-11552729023jws2rdggar.png" alt="error"
+          width="20px">
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="define">
+        <div class="bg-img">
+            <img src="https://pbs.twimg.com/media/Fxyq8IPaEAAkQkM?format=jpg&name=large" alt="error">
+        </div>
+        <div class="new-arc">
+            <h1>SwordsSmith Village<br> Arc</h1>
+            <p>The new arc features sound hashira Tengen <br> Uzui and his three wives. Upper moon six <br> as antagonist.
+            </p>
+            <div id="button">
+                <button><a href="https://gogoanime.fi/category/kimetsu-no-yaiba-yuukaku-hen">Watch Now</a></button>
+            </div>
+        </div>
+    </section>
+    <section id="grid">
+        <div class="frst-img" >
+            <a href="https://gogoanime.fi/category/kimetsu-no-yaiba">
+                    <img src="https://staticg.sportskeeda.com/editor/2023/01/6c5fb-16751462852652-1920.jpg?w=840" alt="">
+                    <!-- <h2 style="font-size: 55px;font-family: Verdana, Geneva, Tahoma, sans-serif; color: white; padding: 80px;">Season 1</h2> -->
+            </a>
+        </div>
+      <div class="scnd-img-col">
+        <a href="https://gogoanime.fi/category/kimetsu-no-yaiba-movie-mugen-ressha-hen">
+          <div>
+            <img src="https://sportshub.cbsistatic.com/i/2021/08/09/ba97f9f5-72e7-4045-8d77-25add6b44d23/demon-slayer-tanjiro-1266595.jpg?width=1200" alt="">
+            <!-- <h2 style="font-size: 55px;font-family: Verdana, Geneva, Tahoma, sans-serif; color: white; padding: 80px;"> -->
+              <!-- Mugen Train Movie</h2> -->
+          </div>
+        </a>
+        <a href="https://gogoanime.fi/category/kimetsu-no-yaiba-mugen-ressha-hen">
+          <div>
+            <img src="https://cdn.realsport101.com/images/ncavvykf/epicstream/5de4dde1e39a25c8405551ed4ba903f1c6f04717-2300x1348.jpg?rect=0,26,2300,1295&w=700&h=394" alt="">
+            <!-- <h2 style="font-size: 55px;font-family: Verdana, Geneva, Tahoma, sans-serif; color: white; padding: 80px;"> -->
+              <!-- Mugen Train Arc</h2> -->
+          </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=n5ZDsygpAG0">
+          <div>
+            <img src="https://sportshub.cbsistatic.com/i/2021/12/06/ab38046c-b97d-40ae-8d87-464261e852db/demon-slayer-entertainment-district-arc-tanjiro-tengen.jpg" alt="">
+            <!-- <h2 style="font-size: 55px;font-family:Verdana, Geneva, Tahoma, sans-serif; color: white; padding: 80px;"> -->
+              <!-- New -->
+              <!-- Arc trailer</h2> -->
+          </div>
+        </a>
+      </div>
+    </section>
+    <div id="animation">
+      <div id="up">
+        <h2>Upper Rank Demon <br> line up: </h2>
+      </div>
+      <div id="read">
+        <button id="readBtn"><a href="https://www.cbr.com/demon-slayer-strongest-demon-moons/">Read Now</a></button>
+      </div>
+      <div class="upper1">
+        <img
+          src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/06/Kokushibo-in-Demon-Slayer.jpg?q=50&fit=crop&w=740&dpr=1.5"
+          alt="error" width="200px">
+      </div>
+      <div class="images">
+        <img id="doma"
+          src="https://s.yimg.com/ny/api/res/1.2/Tt.0wyby96ugVb.pFdfEog--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MDtjZj13ZWJw/https://media.zenfs.com/en/digital_spy_281/c333f0d93eac6ee2ae2c948e0ad9bbc7"
+          alt="error" width="200px" >
+        <img id="akaza"
+          src="https://s.yimg.com/ny/api/res/1.2/O9SYRFWZGZVM9_eVV7u47Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MDtjZj13ZWJw/https://media.zenfs.com/en/digital_spy_281/d3a5262b24d4bffceab0dddfee6f8fd9"
+          alt="error" width="200px" >
+        <img id="gyokko"
+          src="https://s.yimg.com/ny/api/res/1.2/WWs6HFN0ajP0kQUL2L9gvw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MDtjZj13ZWJw/https://media.zenfs.com/en/digital_spy_281/6442e66d8c1baf0a70aec77462b1f03d"
+          alt="error" width="200px" >
+        <img id="daki"
+          src="https://s.yimg.com/ny/api/res/1.2/AIwK7.iatzcmjvtXxpAtbA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MDtjZj13ZWJw/https://media.zenfs.com/en/digital_spy_281/86cfd0a5d3a715ca78e8872867fa6da0"
+          alt="error" width="200px">
+      </div>
+      <div class="write">
+        <div class="right-margin">
+          <h2 style="font-size: 20px;">Upper Rank 2</h2>
+          <p style="font-size: 15px; line-height: 1.5em; ">Just a glimpse<br> of Doma is shown <br> in the end of
+            Entertainment <br> Arc.</p>
+        </div>
+        <div class="margin-needed">
+          <h2 style="font-size: 20px;">Upper Rank 3</h2>
+          <p style="font-size: 15px; line-height: 1.5em;">Akaza made his <br>entry in Mugen <br> Train Arc and became<br> fans favourite.</p>
+        </div>
+        <div class="margin-needed">
+          <h2 style="font-size: 20px;">Upper Rank 5</h2>
+          <p style="font-size: 15px; line-height: 1.5em;">Gyokko is that <br> horrid little guy who<br> lives in a vase</p>
+        </div>
+        <div class="left-margin">
+          <h2 style="font-size: 20px;">Upper Rank 6</h2>
+          <p style="font-size: 15px; line-height: 1.5em;">Upper Rank 6 siblings <br> made their debut <br> and died in
+            Entertainment <br> Arc. </p>
+        </div>
+      </div>
+    </div>
+    <div id="poster">
+      <img
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/00062df0-faf0-4acf-b9a4-c71d134bc6b7/ddguocg-01c1ca47-2e32-4400-bc79-9dd2d8880311.png/v1/fill/w_1567,h_510,q_70,strp/hashira_by_saetoraa_ddguocg-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAwMDYyZGYwLWZhZjAtNGFjZi1iOWE0LWM3MWQxMzRiYzZiN1wvZGRndW9jZy0wMWMxY2E0Ny0yZTMyLTQ0MDAtYmM3OS05ZGQyZDg4ODAzMTEucG5nIiwiaGVpZ2h0IjoiPD02MjUiLCJ3aWR0aCI6Ijw9MTkyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8wMDA2MmRmMC1mYWYwLTRhY2YtYjlhNC1jNzFkMTM0YmM2YjdcL3NhZXRvcmFhLTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.nKhcFHcp5oUntt9qXwDfLF0xUOG2dZgdQutEP2UY6uY"
+        alt="error">
+      <p>The Hashiras are the pillars of the Demon <br> Slayer Corps. They are humanity's last line of defence <br> against demons.</p>
+    </div>
+    <div id="features">
+      <h1>Original Network</h1>
+      <div class="on">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Ktv_logo.svg/400px-Ktv_logo.svg.png"
+          alt="error" height="40px" >
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Fuji_TV_logo.svg" alt="error" height="40px"
+          >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Tokyo_metropolitan_television_logo_%28rainbow%29.svg/1280px-Tokyo_metropolitan_television_logo_%28rainbow%29.svg.png"
+          alt="error" height="40px">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/BS11_logo.svg/2560px-BS11_logo.svg.png"
+          alt="error" height="40px">
+      </div>
+    </div>
+    <footer>
+      <div id="touch">
+        <h1>Keep in touch</h1>
+        <p>Sign up for our newsletter to get the latest news, announcements, and
+          <br> special offers
+        </p>
+        <button>Sign Up</button>
+      </div>
+      <div id="home">
+        <div class="lists">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0250/0077/1659/products/demonslayer_769872d4-a9a5-4897-ac06-de7fe27c9a33_480x.png?v=1611079977"
+            alt="error" width="40px">
+        </div>
+        <div class="lists">
+          <ul>
+            <li><a href="https://demonslayer-world.com/home/">Shop Merches</a></li>
+            <li><a href="https://www.amazon.in/Demon-Slayer-Complete-Box-Set/dp/1974725952">Shop Manga</a></li>
+            <li><a href="https://animeukiyo.com/demon-slayer-manga-order/">About Manga</a></li>
+            <li><a href="https://time.com/5941594/what-is-demon-slayer-about/">About Demon Slayer</a></li>
+          </ul>
+        </div>
+        <div class="lists">
+          <ul>
+            <li>Help</li>
+            <li>Returns</li>
+            <li>Contact</li>
+            <li>Policies</li>
+          </ul>
+        </div>
+        <div class="lists">
+          <a href="https://www.instagram.com/kimetsunoyaiiba/?hl=en"><img
+              src="https://www.vhv.rs/dpng/d/35-358865_instagram-logo-grey-transparent-hd-png-download.png" alt="error"
+              width="20px"></a>
+        </div>
+        <div class="para lists">
+          Sign up for our newsletter to <br> get the latest news, <br> announcements, and special <br> offers
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>
